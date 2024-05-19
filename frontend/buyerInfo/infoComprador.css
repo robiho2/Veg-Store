@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Estilos generales */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  background-color: #e8f5e9;
+}
+:root {
+  --green: #4cae4e;
+  --yellow: #ffc00e;
+  --orange: #f0592b;
+  --white: #fff9f4;
+  --brown: #964b00;
+}
+
+
+body {  
+  max-width: 1200px;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+/*header*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #4cae4e;
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 0.5rem 1rem rbga(0, 0, 0, 0.1);
+}
+
+header .logo {
+  font-size: 3rem;
+  color: var(--white);
+  font-weight: bolder;
+}
+
+header .logo span {
+  color: var(--white);
+}
+
+.search-bar {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  padding: 0.5rem;
+  border-radius: 2rem;
+  border: 0.1rem solid #fff9f4;
+  font-size: 1.6rem;
+  margin-right: 1rem;
+}
+
+.search-bar button {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: #fff9f4;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  color: #f0592b;
+}
+
+header .navbar a {
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color: #fff9f4;
+}
+
+header .navbar a:hover {
+  color: #ffc00e;
+}
+
+header .icons a {
+  font-size: 3rem;
+  color: #fff9f4;
+  margin-left: 2rem;
+}
+
+header .icons a:hover {
+  color: #f0592b;
+}
+
+header #toggler {
+  display: none;
+}
+
+header .fa-bars {
+  font-size: 3rem;
+  color: #fff9f4;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border: 0.1rem solid #fff9f4;
+  display: none;
+}
+header {
+  background-color: #4cae4e;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+
+.botonA{
+
+  margin-top:10px
+}
+
+/*botones*/
+.botonA, .botonB{
+  background-color: #FFC00E; 
+  color: black; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  size: 20px;
+}
+
+
+.file-upload-btn:hover {
+  background-color: #8B8000;  
+}
+
+/*fin botones*/
+
+
+.profile {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-left: 650px;
+}
+
+.profile img {
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+}
+
+.yellow-button {
+  background-color: #FFC00E;  
+  color: #000; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ 
+}
+
+.yellow-button:hover {
+  background-color: #ffd600; /* Color amarillo más claro al pasar el mouse */
+}
+
+footer {
+  background-color: #4cae4e;
+  text-align: center;
+
+}
+
+
+
+.content {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px rgba(121, 97, 25, 0.934);
+  background-color: lightgray;
+  margin-left: 650px;
+
+}
+
+.editable {
+  cursor: pointer;
+  border-bottom: 1px dashed blue;
+}
+
+.flatpickr-prev-month,
+.flatpickr-next-month {
+  display: none;
+}
+
+/*formulario*/
+
+
+
+
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.message {
+  margin-top: 10px;
+  font-family: "Open Sans", sans-serif;
+  color: red;
+}
+
+.info{
+  margin-top:30px;
+}
+
+
+
+
+
+/* Estilos para el acordeón */
+
+
+
+.faq-container {
+  max-width: 600px;
+  margin: 20px auto;
+  margin-top:90px;
+  
+}
+
+.question {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+ 
+}
+
+.question-title {
+  padding: 10px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
+.answer {
+  padding: 10px;
+  display: none;
+  background-color: #fff;
+}
+
+.section2 {
+  margin-top:80px
+}

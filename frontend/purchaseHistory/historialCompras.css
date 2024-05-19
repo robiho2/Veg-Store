@@ -1,0 +1,201 @@
+/* Estilos generales */
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --green: #4cae4e;
+  --yellow: #ffc00e;
+  --orange: #f0592b;
+  --white: #fff9f4;
+  --brown: #964b00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+body {  
+  max-width: 1200px;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+/*header*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #4cae4e;
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 0.5rem 1rem rbga(0, 0, 0, 0.1);
+}
+
+header .logo {
+  font-size: 3rem;
+  color: var(--white);
+  font-weight: bolder;
+}
+
+header .logo span {
+  color: var(--white);
+}
+
+.search-bar {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  padding: 0.5rem;
+  border-radius: 2rem;
+  border: 0.1rem solid #fff9f4;
+  font-size: 1.6rem;
+  margin-right: 1rem;
+}
+
+.search-bar button {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: #fff9f4;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  color: #f0592b;
+}
+
+header .navbar a {
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color: #fff9f4;
+}
+
+header .navbar a:hover {
+  color: #ffc00e;
+}
+
+header .icons a {
+  font-size: 3rem;
+  color: #fff9f4;
+  margin-left: 2rem;
+}
+
+header .icons a:hover {
+  color: #f0592b;
+}
+
+header #toggler {
+  display: none;
+}
+
+header .fa-bars {
+  font-size: 3rem;
+  color: #fff9f4;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border: 0.1rem solid #fff9f4;
+  display: none;
+}
+header {
+  background-color: #4cae4e;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+  margin-top: 80px; /* Ajusta el margen superior para evitar que el contenido se superponga con el header */
+}
+
+/* Estilos para la sección de productos recientes */
+.recent-products {
+  margin-top: 50px; /* Ajusta el margen superior para separar del header */
+}
+
+.recent-products h2 {
+  margin-bottom: 20px; /* Ajusta el margen inferior del título */
+}
+
+.recent-products ul {
+  list-style: none; /* Quita los puntos de lista */
+}
+
+.recent-products li {
+  display: flex; /* Utiliza el modelo de caja flex */
+  align-items: center; /* Alinea los elementos verticalmente */
+  margin-bottom: 20px; /* Ajusta el margen inferior entre elementos */
+}
+
+.recent-products li img {
+  max-width: 100px; /* Ajusta el ancho máximo de la imagen */
+  margin-right: 20px; /* Ajusta el margen derecho de la imagen */
+}
+
+.product-info {
+  flex-grow: 1; /* Permite que la información del producto ocupe el espacio restante */
+}
+
+.product-actions {
+  display: flex; /* Utiliza el modelo de caja flex */
+  align-items: center; /* Alinea los elementos verticalmente */
+}
+
+.product-actions button {
+  margin-right: 10px; /* Ajusta el margen derecho entre botones */
+}
+
+/* Estilos para la sección de historial de compras */
+.purchase-history {
+  margin-top: 20px; /* Ajusta el margen superior */
+}
+
+.purchase-history table {
+  width: 100%;
+  border-collapse: collapse; /* Fusiona los bordes de las celdas */
+}
+
+.purchase-history th,
+.purchase-history td {
+  padding: 8px; /* Añade espacio interno a las celdas */
+  border-bottom: 1px solid #ccc; /* Agrega un borde inferior a las celdas */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.purchase-history th {
+  background-color: #f2f2f2; /* Color de fondo para las cabeceras de la tabla */
+}
+
+footer {
+  margin-top: 300px; /* Ajusta el margen superior según sea necesario */
+}

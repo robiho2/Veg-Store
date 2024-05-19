@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="infoComprador.css">
+    <title>Información personal del Comprador</title>
+    <script src="infoComprador.js" defer></script>
+        <script
+      src="https://widget.cloudinary.com/v2.0/global/all.js"
+      type="text/javascript"
+    ></script>
+</head>
+<body>
+  <header>
+    <input type="checkbox" name="" id="toggler" />
+    <label for="toggler" class="fas fa-bars"></label>
+    <a href="../homepage/homepage.html" class="logo"> CNP <span>.</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar..." />
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </div>
+    <nav class="navbar">
+      <a href="../homepage/homepage.html">Inicio</a>
+      <a href="../products/productos.html">Productos</a>
+    </nav>
+    <div class="icons">
+      <a href="checkout.html" class="fas fa-shopping-cart"></a>
+      <a href="../profileUser/perfilUsuario.html" class="fas fa-user"></a>
+    </div>
+  </header>
+
+
+
+<main>
+<div class="container">
+  <div class="column">
+    <div class="profile">
+      <img src="" alt="" id="profile-pic-comprador" />
+      <button type="button" id="btn-subir-archivo"class="yellow-button">Subir foto</button>
+    </div>
+  </div>
+</div>
+
+ 
+  <!--fin del cambio de la foto de perfil-->
+
+  <!-- inicio del formulario -->
+    <section class="content">
+      <h1>Información Personal</h1>
+      <form id="personal-info-form">
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+          <label for="apellido">Primer Apellido:</label>
+          <input type="text" id="apellido" name="apellido"  required>
+        </div>
+        <div>
+          <label for="cedula">Cédula:</label>
+          <input type="text" id="cedula" name="cedula"  required>
+        </div>
+        <div>
+          <labelfor="correo">Correo Electrónico:</labelfor=>
+          <input type="text" id="correo" name="correo" required>
+        </div>
+        <div>
+          <label for="telefono">Número de Teléfono:</label>
+          <input type="text" id="telefono" name="telefono" required>
+        </div>
+    <button class="botonA" id="guardar-btn" onclick="seAudioContext">Guardar Información</button>
+    <div id="personal-message" class="message" style="color: green;"></div>
+
+      </form>
+      <!-- fin del formulario -->
+
+      <!--inicio del cambio de password-->
+<h2 class="section2">Cambio de Contraseña</h2>
+<form id="password-change-form-comprador">
+    <div>
+        <label for="contrasenaActual-comprador">Contraseña Actual:</label>
+        <input type="password" id="contrasenaActual-comprador" required>
+    </div>
+    <div>
+        <label for="contrasenaNueva-comprador">Contraseña Nueva:</label>
+        <input type="password" id="contrasenaNueva-comprador" required>
+        <p class="password-requirements">
+            Requisitos de la contraseña:
+            <ul>
+                <li>Debe contener al menos una letra mayúscula.</li>
+                <li>Debe contener al menos una letra minúscula.</li>
+                <li>Debe contener al menos un número.</li>
+                <li>Debe contener al menos un caracter especial.</li>
+                <li>Debe tener entre 6 y 8 caracteres de longitud.</li>
+            </ul>
+        </p>
+        <span id="password-error-comprador" class="error-message"></span> 
+    </div>
+    <button type="submit" class="botonB">Guardar Contraseña</button>
+    <div>
+        <span id="password-message-comprador" class="success-message"></span> 
+    </div>
+</form>
+
+
+
+
+<!-- metodo de pago -->
+<section class="">
+  <h2>Método de Pago</h2>
+  <img src="../imgs/tarjeta.png" alt="Imagen de método de pago">
+  <form id="payment-form">
+    <div class="info">
+      <label for="nombreTitular">Nombre del titular </label>
+      <input type="text" id="nombreTitular"  required>
+    </div>
+    <div>
+      <label for="numeroIBAN">Número IBAN:</label>
+      <input type="text" id="numeroIBAN" value="CR05015202001026284066" required>
+    </div>
+    <button class="botonA" type="submit">Actualizar</button>
+    <div id="payment-message" class="message"></div>
+  </form>
+</section>
+
+
+
+   <!--- <button id="eliminar-cuenta-btn" class="botonA" type="button">Eliminar Cuenta</button> -->
+
+  </div>
+</div>
+</main>
+<footer></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.6/flatpickr.min.js"></script>
+</body>
+</html>

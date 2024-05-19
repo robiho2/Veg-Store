@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Compras</title>
+    <link rel="stylesheet" href="historialCompras.css"> <!-- Enlaza tu archivo CSS -->
+    
+</head>
+<body>
+    <header>
+        
+        <input type="checkbox" name="" id="toggler" />
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="homepage.html" class="logo"> CNP <span>.</span></a>
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar..." />
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+
+        <nav class="navbar">
+          <a href="homepage.html">Inicio</a>
+          <a href="productos.html">Productos</a>
+        </nav>
+        <div class="icons">
+          <a href="checkout.html" class="fas fa-shopping-cart"></a>
+          <a href="perfilUsuario.html" class="fas fa-user"></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="recent-products">   
+            <h2>Productos Recientes</h2>
+            <ul>
+                <li>
+                    <img src="../imgs/sandia.png" alt="Product 1">
+                    <div class="product-info">
+                        <h3>Sandía</h3>
+                        <p>Cantidad comprada: 2</p>
+                    </div>
+                    <div class="product-actions">
+                        <button onclick="verDetalles()">Ver Detalles</button>
+                        <button onclick="recomprar()">Recomprar</button>
+                        <button onclick="añadirListaDeseos()">Añadir a Lista de Deseos</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="../imgs/melon.png" alt="Product 1">
+                    <div class="product-info">
+                        <h3>Melón</h3>
+                        <p>Cantidad comprada: 1</p>
+                    </div>
+                    <div class="product-actions">
+                        <button onclick="verDetalles()">Ver Detalles</button>
+                        <button onclick="recomprar()">Recomprar</button>
+                        <button onclick="añadirListaDeseos()">Añadir a Lista de Deseos</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="../imgs/banano.png" alt="Product 1">
+                    <div class="product-info">
+                        <h3>Banano</h3>
+                        <p>Cantidad comprada: 5</p>
+                    </div>
+                    <div class="product-actions">
+                        <button onclick="verDetalles()">Ver Detalles</button>
+                        <button onclick="recomprar()">Recomprar</button>
+                        <button onclick="añadirListaDeseos()">Añadir a Lista de Deseos</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="../imgs/tomate.png" alt="Product 1">
+                    <div class="product-info">
+                        <h3>Tomate</h3>
+                        <p>Cantidad comprada: 2</p>
+                    </div>
+                    <div class="product-actions">
+                        <button onclick="verDetalles()">Ver Detalles</button>
+                        <button onclick="recomprar()">Recomprar</button>
+                        <button onclick="añadirListaDeseos()">Añadir a Lista de Deseos</button>
+                    </div>
+                </li>
+                
+        </section>
+        <section class="purchase-history">
+            <h2>Historial de Compras</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio Unitario</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2023-04-01</td>
+                        <td>Sandía</td>
+                        <td>2</td>
+                        <td>₡2000</td>
+                        <td>₡4000</td>
+                    </tr>
+                    <tr>
+                        <td>2023-04-01</td>
+                        <td>Melón</td>
+                        <td>2</td>
+                        <td>₡1500</td>
+                        <td>₡16</td>
+                    </tr>
+                    <tr>
+                        <td>2023-04-05</td>
+                        <td>Banano</td>
+                        <td>1</td>
+                        <td>₡1000</td>
+                        <td>₡5000</td>
+                    </tr>
+                    <tr>
+                        <td>2023-04-10</td>
+                        <td>Tomate</td>
+                        <td>2</td>
+                        <td>₡800</td>
+                        <td>₡1600</td>
+                    </tr>
+                    <!-- Add more purchase history items here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <script>
+            function buscar() {
+                window.location.href = 'buscar.html';
+            }
+    
+            function verDetalles() {
+                window.location.href = 'detalles.html';
+            }
+    
+            function recomprar() {
+                window.location.href = 'recomprar.html';
+            }
+    
+            function añadirListaDeseos() {
+                window.location.href = 'lista-deseos.html';
+            }
+        </script>
+    </body>
+    </html>
+        <p>Derechos de autor © 2024 Prime Tech Innovations</p>
+    </footer>
+</body>
+</html>

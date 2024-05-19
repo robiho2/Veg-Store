@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Estilos generales */
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+    background-color: #4cae4e;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .header-left {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  .profile-link {
+    margin-left: 200px; /* Mueve "Mi Perfil" completamente a la derecha */
+}
+  
+  header .header-left h1 {
+    color: #fff;
+    font-size: 24px;
+    margin-left: 20px;
+  }
+  
+  header .header-right {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .header-right img {
+    width: 30px; /* Ancho deseado de la imagen */
+    height: auto; /* Altura ajustada automáticamente */
+    margin-left: 10px; /* Espacio entre la imagen y el elemento anterior */
+  }
+  
+  .header-left img {
+    width: 40px; /* Ancho deseado de la imagen */
+    height: auto; /* Altura ajustada automáticamente */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+  }
+  
+header .header-right .search-profile-container {
+    display: flex; /* tuve que agregar flexbox para poder mover el botn de buscar*/
+    align-items: center; 
+}
+
+header .header-right input[type="text"] {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+header .header-right button {
+    background-color: #FFC00E;
+    color: #000;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 5px;
+}
+  
+  header .header-right button:hover {
+    background-color:#8B8000;
+}
+
+
+.file-upload-btn {
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px; 
+    transition: background-color 0.3s ease; 
+}
+
+.file-upload-btn:hover {
+    background-color: #4CAF50;
+}
+
+
+
+
+/*aca es donde veo los botones como de catalogo agregar ordenes e inico*/
+aside {
+    width: 350px;
+    background-color: #c8ecb8b1;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    margin-top: -10px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.profile img {
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+}
+
+.yellow-button {
+  background-color: #FFC00E;  
+  color: #000; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ 
+}
+
+.sidebar {
+    margin-top: 20px; 
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px; 
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease; 
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+  margin-top: 70px;
+  border-radius: 10px;
+  font-size: 18px; 
+}
+
+
+
+.sidebar ul li a {
+  color: white;
+  display: block;
+  padding: 20px;
+  background-color: #ac4a15;
+  border-radius: 5px;
+  text-align: center;
+
+}
+
+
+
+/* boton */
+
+.profile {
+  text-align: center;
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.botonB, .botonA{
+  background-color: #FFC00E; 
+  color: black; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  margin-top:10px;
+}
+
+.botonB:hover {
+  background-color: #8B8000; 
+}
+
+.file-upload-btn {
+  background-color: #FFC00E; 
+  color: black; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+.file-upload-btn:hover {
+  background-color: #8B8000;  
+}
+
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+
+  border-radius: 10px;
+}
+
+.editable {
+  cursor: pointer;
+  border-bottom: 1px dashed blue;
+}
+
+.flatpickr-prev-month,
+.flatpickr-next-month {
+  display: none;
+}
+
+/*formulario*/
+
+.content {
+  padding: 20px;
+  margin-top: 60px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.message {
+  margin-top: 10px;
+  font-family: "Open Sans", sans-serif;
+  color: red;
+}
+
+button {
+  background-color: yellow;
+}
+
+
+.delete-account {
+  margin-top:40px;
+}
+
+.section2 {
+  margin-top:40px;
+}
+
+
+/*folulario mensajes*/
+
+    .error-message {
+        color: red;
+    }
+
+    .success-message {
+      color:green;
+    }

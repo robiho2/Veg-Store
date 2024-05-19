@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="perfilAdmin.css">
+    <title>Perfil Administrador</title>
+ 
+
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Perfil Administracion</h1>
+        </div>
+        <div class="header-right">
+            <div class="search-profile-container">
+                <input type="text" placeholder="Buscar...">
+                <button id="buscarButton">Buscar</button> <!-- Agrega un ID al botón para identificarlo -->
+            </div>
+            <a href="perfilVendedor.html" class="profile-link">
+                <img src="../imgs/avatar.png" alt="Mi perfil">
+            </a>
+        </div>
+    </header>
+    <main> 
+
+    <div class="sidenav">
+      <a href="Home">Home</a>
+      <a href="Informacion Personal">Informacion Personal</a>
+      <a href="Tickets">Tickets</a>
+      <a href="">Reporte</a>
+    </div>
+    
+        <div class="admin">
+            <h2>Administrador</h2>
+            <div class="buttons">
+                <button onclick="window.location.href = 'vendorCatalog.html';" id="productos">Productos</button>
+                <button onclick="window.location.href = 'producto_nuevo.html';" id="ordenes">Registro Producto</button> 
+                <button onclick="window.location.href = 'infoVendedor.html';" id="Informacion Personal">Informacion Personal</button>
+            </div>  
+            <section class="content">
+                <h2>Productos <span>en venta</span></h2>
+                <table class="product-table">
+                  <thead>
+                    <tr>
+                      <th>Imagen</th>
+                      <th>Video</th>
+                      <th>Nombre</th>
+                      <th>Precio</th>
+                      <th>Descripción</th>
+                      <th>Cant. Disponible</th>
+                      <th>Editar</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img src="../imgs/lechuga.png" alt="Lechuga" />
+                      </td>
+                      <td>
+                        <iframe
+                          src="/CNPvids/lechuga.mp4"
+                          frameborder="0"
+                          allowfullscreen
+                        ></iframe>
+                      </td>
+                      <td>Lechuga</td>
+                      <td>₡2500</td>
+                      <td>Descripción del Producto</td>
+                      <td>55</td>
+                      <td><a href="#" class="fas fa-pencil"></a></td>
+                    </tr>
+          
+                    <tr>
+                      <td>
+                        <img src="../imgs/banano.png" alt="Banano" />
+                      </td>
+                      <td>
+                        <iframe
+                          src="/CNP/vids/banano.mp4"
+                          frameborder="0"
+                          allowfullscreen
+                        ></iframe>
+                      </td>
+                      <td>Banano</td>
+                      <td>₡2000</td>
+                      <td>Bananos frescos cultivados en mi finca</td>
+                      <td>200</td>
+                      <td><a href="#" class="fas fa-pencil"></a></td>
+                    </tr>
+          
+                    <tr>
+                      <td>
+                        <img src="/../imgs/melon.png" alt="Melon" />
+                      </td>
+                      <td>
+                        <iframe
+                          src="/CNP/vids/melon.mp4"
+                          frameborder="0"
+                          allowfullscreen
+                        ></iframe>
+                      </td>
+                      <td>Melon</td>
+                      <td>₡3000</td>
+                      <td>Melon maduro, entero.</td>
+                      <td>70</td>
+                      <td><a href="#" class="fas fa-pencil"></a></td>
+                    </tr>
+                    <!-- Otras filas para más productos -->
+                  </tbody>
+                </table>
+              </section>
+
+    </main>   
+       
+    </body>
+    </html> 
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+    <title>Formulario de Inicio de Sesión</title>
+    <link rel="icon" href="favicon.png">
+</head>
+<main>
+    <div class="login-panel">
+        <h1>Iniciar sesión</h1>
+        <form onsubmit="return false">
+            <div class="form-group">
+                <input type="text" id="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" placeholder="Contraseña" required>
+            </div>
+            <button onclick="getPassword()">¿Olvidaste tu contraseña?</button> <br> <br>
+            <button onclick="redirectToHomePage()">Iniciar</button>
+        </form>
+        <span id="emailError" style="color: red;"></span>
+    </div>
+
+    <div class="hello-panel">
+        <div>
+            <h2>¡Hola!</h2>
+            <p>Deseas crear una cuenta de</p>
+        </div>
+
+        <div class="container-wrapper">
+            <div class="vendedor-container">
+                <a href=""> <!-- debemos agregar el html correspondiente para el home page  del vendedor-->
+                    <img src="../imgs/vendedor.png" alt="Imagen 1" class="footer-image">
+                    <a href="../sellerForm/registro_vendedor.html">
+                        <button class="vendedor-btn">Vendedor</button>
+                    </a>
+                </a>
+            </div>
+
+            <div class="comprador-container">
+                <a href="../buyerForm/registroComprador.html">
+                    <!-- debemos agregar el html correspondiente que es la del cliente a la cual tiene access-->
+                    <img src="../imgs/comprador.png" alt="Imagen 2" class="footer-image">
+                    <button class="comprador-btn">Cliente</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+<footer> </footer>
+</body>
+</html>

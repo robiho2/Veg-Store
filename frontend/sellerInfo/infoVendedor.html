@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="infoVendedor.css">
+  <title>Información personal del Vendedor</title>
+  <script src="infoVendedor.js" defer></script>
+  <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-left">
+      <h1>CNP</h1>
+    </div>
+    <div class="header-right">
+      <div class="search-profile-container">
+        <input type="text" placeholder="Buscar...">
+        <button>Buscar</button>
+      </div>
+    </div>
+  </header>
+
+
+
+  <main>
+    <!--inicio del cambio de foto-->
+<aside>
+    <div class="profile">
+      <img src="../imgs/fotovendedor.png" alt="" id="profile-pic-vendedor" />
+      <button type="button" id="btn-subir-photo-vendedor"class="yellow-button">Subir foto</button>
+    </div>
+    
+
+
+      <nav class="sidebar">
+        <ul>
+            <li><a href="../catalogo/catalogo.html">Catálogo</a></li> <!--aca va el link del catalog-->
+            <li><a href="../products/productos.html">Agregar</a></li><!--aca va el link de agregar un producto-->
+            <li><a href="../homepage/homepage.html">Inicio</a></li><!--aca va el link de inico-->
+        </ul>
+      </nav>
+    </aside>
+
+    <!--fin-->
+
+
+    <!--inicio del cambio de info personal-->
+    <section class="content">
+      <h1>Información Personal</h1>
+        <div>
+          <label for="nombre1">Nombre:</label>
+          <input type="text" id="nombre1" name="nombre" value="Monica" required>
+        </div>
+        <div>
+          <label for="apellido1">Primer Apellido:</label>
+          <input type="text" id="apellido1" name="apellido" value="Venegas" required>
+        </div>
+        <div>
+          <label for="cedula1">Cédula:</label>
+          <input type="text" id="cedula1" name="cedula" value="1 1852-0632" required>
+        </div>
+        <div>
+          <label for="correo1">Correo Electrónico:</label>
+          <input type="text" id="correo1" name="correo" value="example@example.com" required>
+        </div>
+        <div>
+          <label for="telefono1">Número de Teléfono:</label>
+          <input type="text" id="telefono1" name="telefono" value="8596-5287" required>
+        </div>
+        <button class="botonA" id="guardar-btn" onclick="actualizarInfo()">Guardar Información</button>
+        <div id="personal-message" class="message" style="color: green;"></div>
+
+
+      <!--fin-->
+
+
+      <!--inicio del cambio de password-->
+      <h2 class="section2">Cambio de Contraseña</h2>
+        <div>
+          <label for="contrasenaActual">Contraseña Actual:</label>
+          <input type="password" id="contrasenaActual" required>
+        </div>
+        <div>
+          <label for="contrasenaNueva">Contraseña Nueva:</label>
+          <input type="password" id="contrasenaNueva-vendedor" required>
+          <p class="password-requirements">
+            Requisitos de la contraseña:
+          <ul>
+            <li>Debe contener al menos una letra mayúscula.</li>
+            <li>Debe contener al menos una letra minúscula.</li>
+            <li>Debe contener al menos un número.</li>
+            <li>Debe contener al menos un caracter especial.</li>
+            <li>Debe tener entre 6 y 8 caracteres de longitud.</li>
+          </ul>
+          </p>
+          <span id="password-error-vendedor" class="error-message"></span>
+        </div>
+        <button onclick="actualizarPassword()" class="botonB">Guardar Contraseña</button>
+        <span id="password-message-vendedor" class="success-message"></span>
+
+      <!--fin-->
+
+    </section>
+  </main>
+
+  <footer></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.6/flatpickr.min.js"></script>
+</body>
+
+</html>

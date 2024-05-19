@@ -1,0 +1,115 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../imgs/back4.jpg');
+   
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #4cae4e;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos del formulario */
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #320a0a;
+    border-radius: 5px;
+    background-color: white; /* Agregamos un fondo blanco */
+    opacity: 0.9; /* Ajustamos la opacidad para que no sea completamente opaco */
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+input[type="file"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #4CAE4E; /* Verde */
+    padding: 20px;
+    text-align: center;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+#btnRegistrarUsuario {
+    background-color: #FFC00E;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+#btnRegistrarUsuario:hover {
+    background-color: #45a049;
+}
+/* Estilos del botón "Atrás" */
+button {
+    background-color: #FFC00E; /* Amarillo */
+    color: black; /* Blanco */
+    padding: 20px; /* Tamaño personalizado */
+    border: none;
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    transition: background-color 0.3s ease; /
+
+
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+    }
+}

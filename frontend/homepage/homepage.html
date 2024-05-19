@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="homepage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" name="" id="toggler" />
+      <label for="toggler" class="fas fa-bars"></label>
+      <a href="homepage.html" class="logo"> CNP <span>.</span></a>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar..." />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </div>
+      <nav class="navbar">
+        <a href="homepage.html">Inicio</a>
+        <a href="../products/productos.html">Productos</a>
+      </nav>
+      <div class="icons">
+        <a href="../checkout/checkout.html" class="fas fa-shopping-cart"></a>
+        <a href="../login/login.html" class="fas fa-user"></a>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3>CALIDAD & FRESCURA</h3>
+        <span>Productos nacionales</span>
+        <p>
+          ¿Te gusta comprar en la feria del agricultor? Ahora puedes conseguir
+          los productos de tus agricultores preferidos, cuando quieras, en solo
+          un click.
+        </p>
+        <a href="../login/login.html" class="btn">Compra ya</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h1 class="heading"><span> Sobre</span> Nosotros</h1>
+      <div class="row">
+        <div class="video-container">
+          <video src="../vids/vegetales.mp4" loop autoplay muted></video>
+          <h3>AGRICULTORES NACIONALES</h3>
+        </div>
+        <div class="content">
+          <h3>Apoya lo nacional</h3>
+          <p>
+            Siempre es importante comprar productos de calidad Costarricense
+            Siempre con total confianza sobre la calidad y la garantia de los productos.
+          </p>          
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <h1 class="heading">Los más <span>vendidos</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <span class="popular">Popular</span>
+          <div class="image">
+            <img src="../imgs/sandia.png" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-star"></a>
+              <a href="../products/productos.html" class="cart-btn">Ver más</a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Sandía</h3>
+          </div>
+        </div>
+
+        <div class="box">
+          <span class="popular">Popular</span>
+          <div class="image">
+            <img src="../imgs/melon.png" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-star"></a>
+              <a href="../products/productos.html" class="cart-btn">Ver más</a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Melón</h3>
+          </div>
+        </div>
+
+        <div class="box">
+          <span class="popular">Popular</span>
+          <div class="image">
+            <img src="../imgs/banano.png" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-star"></a>
+              <a href="../products/productos.html" class="cart-btn" >Ver más</a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Banano</h3>
+          </div>
+        </div>
+
+        <div class="box">
+          <span class="popular">Popular</span>
+          <div class="image">
+            <img src="../imgs/tomate.png" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-star"></a>
+              <a href="../products/productos.html" class="cart-btn">Ver más</a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Tomate</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Contenido</h3>
+          <a href="#">Inicio</a>
+          <a href="../profileUser/perfilUsuario.html">Perfil de usuario</a>
+          <a href="../profileAdmin/perfilAdmin.html">Administracion</a>
+          <a href="../landingteam/index.html">Sobre Nosotros</a>
+        </div>
+      </div>
+
+      <div class="credit">
+        <a href="#">
+          Creado por <span>PrimeTech Innovations</span> | Derechos reservados
+          |</a
+        >
+      </div>
+    </section>
+  </body>
+</html>

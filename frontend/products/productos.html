@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="../products/productos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script src="productos.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" name="" id="toggler" />
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo"> CNP <span>.</span></a>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar..." />
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        <nav class="navbar">
+            <a href="../homepage/homepage.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+        </nav>
+        <div class="icons">
+            <a href="checkout.html" class="fas fa-shopping-cart"></a>
+            <a href="perfilUsuario.html" class="fas fa-user"></a>
+        </div>
+    </header>
+
+    <h1 class="heading">Prod<span>uctos</span></h1>
+    <div class="container-items">
+        <div id="banano" class="item">
+            <a href="ventanaProducto.html">
+                <figure>
+                    <img src="../imgs/banano.png" alt="banano">
+            </a>
+            </figure>
+            <div class="info-product">
+                <h2 class="item-title">Banano</h2>
+                <p>₡<span class="price">1000</span></span></p>
+                <button id="banano" class="option"> Añadir al carrito </button>
+            </div>
+        </div>
+        <div id="melon" class="item">
+            <figure>
+                <img src="../imgs/melon.png" alt="melon">
+            </figure>
+            <div class="info-product">
+                <h2 class="item-title">Melon</h2>
+                <p>₡<span class="price">1500 </span></p>
+                <button id="melon" class="option"> Añadir al carrito </button>
+            </div>
+        </div>
+        <div id="sandia" class="item">
+            <figure>
+                <img src="../imgs/sandia.png" alt="sandia">
+            </figure>
+            <div class="info-product">
+                <h2 class="item-title">Sandia</h2>
+                <p>₡<span class="price">2000</span></p>
+                <button id="sandia" class="option"> Añadir al carrito </button>
+            </div>
+        </div>
+        <div id="tomate" class="item">
+            <figure>
+                <img src="../imgs/tomate.png" alt="tomate">
+            </figure>
+            <div class="info-product">
+                <h2 class="item-title">Tomate</h2>
+                <p>₡<span class="price">800 </span></span></p>
+                <button id="tomate" class="option"> Añadir al carrito </button>
+            </div>
+        </div>
+        <div id="lechuga" class="item">
+            <figure>
+                <img src="../imgs/lechuga.png" alt="lechuga">
+            </figure>
+            <div class="info-product">
+                <h2 class="item-title">Lechga</h2>
+                <p>₡<span class="price">500 </span></p>
+                <button id="lechuga" class="option"> Añadir al carrito </button>
+
+            </div>
+        </div>
+    </div>
+    <a href="../checkout/checkout.html" class="btn">Chekout</a>
+    </section>
+</body>
+
+</html>

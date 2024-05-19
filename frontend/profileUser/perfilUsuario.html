@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil Usuario</title>
+  <link rel="stylesheet" href="./perilUsuario.css" />
+  <script src="./perfilUsuario.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <input type="checkbox" name="" id="toggler" />
+    <label for="toggler" class="fas fa-bars"></label>
+    <a href="../homepage/homepage.html" class="logo"> CNP <span>.</span></a>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar..." />
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </div>
+    <nav class="navbar">
+      <a href="../homepage/homepage.html">Inicio</a>
+      <a href="../products/productos.html">Productos</a>
+    </nav>
+    <div class="icons">
+      <a href="checkout.html" class="fas fa-shopping-cart"></a>
+      <a href="perfilUsuario.html" class="fas fa-user"></a>
+    </div>
+  </header>
+
+  <main>
+
+    <h1>Perfil de usuario</h1>
+    <div class="icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/6073/6073873.png" alt="Foto de usuario" />
+    </div>
+    <h1 id="nombre-completo"></h1>
+    <div class="button-container">
+      <a href="../purchaseHistory/historialCompras.html">
+        <button type="button">Historial de compra</button>
+      </a>
+      <button type="button" onclick="redirectToForm()">Editar datos de Usuario</button>
+      <button type="button" onclick="eliminarCuenta()">Eliminar cuenta</button>
+    </div>
+  </main>
+  <footer>
+    <div class="btn-container">
+      <!-- El botón de atrás está aquí -->
+    </div>
+  </footer>
+  </div>
+  <!-- El botón de atrás está fuera del contenedor principal -->
+  <button id="btnAtras" onclick="window.history.back()">Atrás</button>
+</body>
+
+</html>

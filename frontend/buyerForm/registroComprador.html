@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Comprador</title>
+    <link rel="stylesheet" href="registroComprador.css">
+    <script src="./registroComprador.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <h1>Formulario de registro de Usuario</h1>
+        <h2>Información personal</h2>
+
+        <div>
+            <label for="nombre">Nombre</label>
+            <input name="nombre" id="nombre" type="text" placeholder="Jose Angel" required />
+        </div>
+        <div>
+            <label for="Apellido">Apellidos</label>
+            <input name="Apellido" id="Apellido" type="text" placeholder="Valverde urbina" required />
+        </div>
+        <div>
+            <label for="Correo-electronico">Correo-electrónico</label>
+            <input name="email" id="Correo-electronico" type="email" placeholder="ejemplo@ejemplo.com" required />
+            <span id="email-error" class="error"></span>
+        </div>
+        <div>
+            <label for="Numero-de-telefono">Número de teléfono</label>
+            <input name="Numero-de-telefono" id="Numero-de-telefono" type="text" placeholder="88888888" required />
+        </div>
+        <h2>Configuración de la cuenta</h2>
+        <div>
+            <label for="cedula">Cédula del Usuario</label>
+            <input name="cedula" id="cedula" type="text" placeholder="70230000" required />
+        </div>
+        <div>
+            <label for="contrasena">Contraseña</label>
+            <input name="contrasena" id="contrasena" type="password" placeholder="Ingresa tu contraseña" required />
+            <span id="password-error" class="error"></span>
+        </div>
+        <div class="btn-container">
+            <button onclick="registrarComprador()">Registrar Usuario</button>
+        </div>
+    </main>
+    <footer>
+        <div class="btn-container">
+            <button id="btnAtras" onclick="window.history.back()">Atrás</button>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Vendedor </title>
+    <link rel="stylesheet" href="registro_vendedor.css">
+    <script src="./registro_vendedor.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <h1> Formulario de Registro del Vendedor </h1>
+        <h2> Informacion personal </h2>
+        <div>
+            <label for="Nombre">Nombre </label>
+            <input name="Nombre" id="Nombre" type="text" placeholder=" Alejandro  " required />
+        </div>
+        <div>
+            <label for="Apellido">Apellidos </label>
+            <input name="Apellido" id="Apellido" type="text" placeholder="Uribe Leiva" required />
+        </div>
+
+        <div>
+            <label for="Correo-electronico">Correo-electronico</label>
+            <input name="Correo-electronico" id="Correo-electronico" type="email" placeholder="ejemplo@ejemplo.com"
+                required />
+        </div>
+
+        <div>
+            <label for="Numero-de-telefono">Numero de telefono </label>
+            <input name="Numero-de-telefono" id="Numero-de-telefono" type="text" placeholder="88888888" required />
+        </div>
+        <div>
+            <label for="Descripcion">Descripcion</label>
+            <input name="Descripcion" id="Descripcion" type="text" required />
+        </div>
+        <div>
+            <label for="Cedula">Cedula</label>
+            <input name="Cedula" id="Cedula" type="text" required />
+        </div>
+        <div>
+            <label for="Documento">Documento</label>
+            <input name="Documento" id="Documento" type="text" required />
+        </div>
+
+
+        <h2> Configuracion de la cuenta </h2>
+        <div>
+            <label for="nombre-tienda">Nombre de Tienda </label>
+            <input name="nombre-tienda" id="nombre-tienda" type="text" placeholder=" Tienda Ale  " required />
+        </div>
+        <div>
+            <label for="contrasena">Contraseña</label>
+            <input name="contrasena" id="contrasena" type="password" placeholder="Ingresa tu contraseña" required />
+        </div>
+        <div class="btn-container">
+            <button onclick="registrarVendedor()" id="btnRegistrarTienda">Registrar Tienda</button>
+        </div>
+
+
+    </main>
+    <footer>
+
+        <div class="btn-container">
+            <button id="btnAtras" onclick="window.history.back()">Atrás</button>
+        </div>
+    </footer>
+
+</body>
+
+</html>
